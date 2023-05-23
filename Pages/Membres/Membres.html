@@ -2,13 +2,14 @@
 <html lang="fr">
  <head>
     <meta charset="utf-8">
-    <link href="Membres.css" rel="stylesheet"> 
+    <link href="Membres.css" rel="stylesheet" > 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2c8d9efa9a.js" crossorigin="anonymous"></script>
+    <script src="Membres.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Membres </title>
+    <title class="navig" onclick="navig()"> Membres </title>
  </head>
 
  <!-- Add this part at the beginning of your HTML page-->
@@ -31,7 +32,7 @@
 
 
     <img class="navImg" src="../../icons/membres.svg">
-    <a href="../Membres/Membres.html" id="text" target="_blank">Membres</a>
+    <a href="../Membres/Membres.html" id="text" target="_blank" onclick="confirmNavigation(event)">Membres</a>
 
 
     <img class="navImg" src="../../icons/projet.svg">
@@ -61,9 +62,12 @@
         </div>
     
     <img id="logo" src="../../icons/logoIsen.png">
+     
 
+    <button id="mode-edition" onclick="bouton()">Mode édition</button>
 </div>
     <!-- You can start to code here-->
+ 
     <body>
 
         <h1 class="center">- Enseignants chercheurs permanents :</h1>
@@ -100,6 +104,9 @@ ayoub.karine@isen-ouest.ycnrea.fr
                     </div>
                 </div>
             </div>
+<div class="new_card">
+
+</div>           
 
             <div class="card card1">
                 <div class="border">
@@ -228,13 +235,7 @@ maher.jridi@isen-ouest.ycnrea.f
             </div>
         </div>
 
-
-
-
-    </body>
-
-
-
+  </body>
  <!-- Add this part at the end of your HTML page-->
     <footer id="footerContainer">
 
